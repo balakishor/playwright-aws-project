@@ -6,7 +6,8 @@ on:
   pull_request:
     branches: [main]
   schedule:
-  - cron: '*/2 * * * *'
+    - cron: '*/2 0 * * *' # Runs daily at midnight
+
 jobs:
   test:
     runs-on: ubuntu-latest
